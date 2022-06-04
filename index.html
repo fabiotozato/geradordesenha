@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senha</title>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');</style>
+     <script src="https://kit.fontawesome.com/f5820b743c.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <img class="logo" src="assets/logo.png" alt="logo">
+
+    <main class="container-input">
+        <span id="valor"></span><span class="char">(quantidade de caracteres)</span>
+        <input id="slider" class="slider" type="range" min="6" max="18" value="12">
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha aleatória</button>
+    </main>
+
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title">Sua senha gerada é:</span>
+        <span id="password" class="password"></span>
+        <span class="copy"> <i class="fa-solid fa-hand-point-up"></i> Clique na senha para copiar.</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
